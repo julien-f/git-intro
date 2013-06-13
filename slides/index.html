@@ -108,16 +108,68 @@ git config --global push.default upstream
 </section>
 
 <section>
-	<h2>First-time setup</h2>
+	<h2>Repository creation</h2>
 
-<pre style="font-size: .9em"><code>
-git config --global user.name "Julien Fontanet"
-git config --global user.email "julien.fontanet@vates.fr"
-
-git config --global color.ui auto
-git config --global push.default upstream
+<pre><code>
+git init [&lt;directory&gt;]
 </code></pre>
 </section>
+
+<section>
+	<h2>Adding files</h2>
+
+	<img src="http://thkoch2001.github.io/whygitisbetter/images/index1.png" style="float:right">
+
+<pre><code>
+git add &lt;files&gt;
+
+git commit
+</code></pre>
+</section>
+
+<section>
+	<h2>Checking the current status</h2>
+
+<pre style="font-size: .7em"><code>
+$ git status
+# On branch master
+nothing to commit (working directory clean)
+
+$ touch test
+$ git status
+# On branch gh-pages
+# Untracked files:
+#   (use "git add &lt;file&gt;..." to include in what will becommitted)
+#
+#	test
+nothing added to commit but untracked files present (use "git add" to track)
+</code></pre>
+</section>
+
+<section>
+	<h2>Ignoring some files</h2>
+
+	<p>Add entries to the <code>.gitignore</code> file:</p>
+<pre style="border: 1px solid gray; font-size: .7em"><code>/test</code></pre>
+
+<pre style="font-size: .7em"><code>
+$ git status
+# On branch master
+nothing to commit (working directory clean)
+</code></pre>
+</section>
+
+<!-- TODO
+- Moving and deleting files.
+- git add -patch
+
+- git log
+- architecture (graphs)
+
+- Branches
+- (Tags)
+- Remotes (ff & rb)
+-->
 
 <section class="chapter">
 	<h1>Resources</h1>
