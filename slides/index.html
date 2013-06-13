@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Introduction to git</title>
+	<link rel="stylesheet" href="http://bost.ocks.org/mike/cubism/intro/style.css">
+</head>
+<body class="overview">
+
+<section class="title">
+	<h1>Introduction to git</h1>
+	<h2>
+		<a href="http://julien.isonoe.net">Julien Fontanet</a>
+		<div><a href="http://vates.fr" style="color: #000">Vates SAS</a>.</div>
+	</h2>
+	<aside>
+		This slides are using <a
+		href="http://mbostock.github.io/stack/">Stack</a>, a
+		presentation library created by <a
+		href="http://bost.ocks.org/mike/">Mike Bostock</a>.
+	</aside>
+</section>
+
+<section class="chapter">
+	<h1>Why git?</h1>
+</section>
+
+<section>
+	<h2>Why version control?</h2>
+	<ul>
+		<li>Checkpoints: you can always go back!</li>
+		<li>Analysis: you can see what changed, and when!</li>
+		<li>Team Work: no more lost code!</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Why version control? (bis)</h2>
+	<ul>
+		<li>Automated Bug finding (<code>git bisect</code>)</li>
+		<li>Multiple version (<code>git branch</code>)</li>
+		<li>Find who did what (<code>git blame</code>)</li>
+		<li><em>And much more…</em></li>
+	</ul>
+</section>
+
+<section>
+	<h2>Why <em>distributed</em>?</h2>
+
+	<div style="text-align: center; margin-top: -3em">
+		<img src="http://thkoch2001.github.io/whygitisbetter/images/local-remote.png" />
+	</div>
+</section>
+
+<section>
+	<h2>Why <em>distributed</em>?</h2>
+
+	<ul>
+		<li>Local data: server failure resistant!</li>
+		<li>Local branching: be messy!</li>
+		<li>No central point: fork at will!</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Why <em>git</em>?</h2>
+
+	<ul>
+		<li>High performance (even on big projects)</li>
+		<li>Flexible: everything can be done (even if hard)</li>
+		<li>Most used DVCS</li>
+	</ul>
+
+	<p><em>Developped by Linus Torvalds for the Linux Kernel.</em></p>
+
+	<aside>See more at <a href="http://thkoch2001.github.io/whygitisbetter/" title="Why git is better">Why git is better</a>.</aside>
+</section>
+
+<section class="chapter">
+	<h1>How?</h1>
+
+	<h2>With great power there must also come great responsability!</h2>
+
+	<aside>
+		git is <em>extremely</em> powerful but can sometimes be hard to master.
+	</aside>
+</section>
+
+<section>
+	<h2>Getting help</h2>
+
+<pre><code>
+git
+git help &lt;command&gt;
+</code></pre>
+</section>
+
+<section>
+	<h2>First-time setup</h2>
+
+<pre style="font-size: .9em"><code>
+git config --global user.name "Julien Fontanet"
+git config --global user.email "julien.fontanet@vates.fr"
+
+git config --global color.ui auto
+git config --global push.default upstream
+</code></pre>
+</section>
+
+<section>
+	<h2>First-time setup</h2>
+
+<pre style="font-size: .9em"><code>
+git config --global user.name "Julien Fontanet"
+git config --global user.email "julien.fontanet@vates.fr"
+
+git config --global color.ui auto
+git config --global push.default upstream
+</code></pre>
+</section>
+
+<section class="chapter">
+	<h1>Resources</h1>
+</section>
+
+<section class="title">
+	<h1><a href="http://git-scm.com/" style="color: #fff">git-scm.com</a></h1>
+	<h2>
+		<a href="http://julien.isonoe.net">Julien Fontanet</a>
+		<div><a href="http://vates.fr" style="color: #000">Vates SAS</a>.</div>
+	</h2>
+	<aside>Thanks for watching!</aside>
+</section>
+
+
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="http://rawgithub.com/mbostock/stack/gh-pages/stack.v0.min.js" charset="utf-8"></script>
+
+</body>
+</html>
