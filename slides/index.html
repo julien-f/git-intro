@@ -135,13 +135,13 @@ $ git status
 # On branch master
 nothing to commit (working directory clean)
 
-$ touch test
+$ touch test.tmp
 $ git status
 # On branch gh-pages
 # Untracked files:
 #   (use "git add &lt;file&gt;..." to include in what will becommitted)
 #
-#	test
+#	test.tmp
 nothing added to commit but untracked files present (use "git add" to track)
 </code></pre>
 </section>
@@ -150,7 +150,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 	<h2>Ignoring some files</h2>
 
 	<p>Add entries to the <code>.gitignore</code> file:</p>
-<pre style="border: 1px solid gray; font-size: .7em"><code>/test</code></pre>
+<pre style="border: 1px solid gray; font-size: .7em"><code>/test.tmp</code></pre>
 
 <pre style="font-size: .7em"><code>
 $ git status
@@ -159,20 +159,100 @@ nothing to commit (working directory clean)
 </code></pre>
 </section>
 
-<!-- TODO
-- Moving and deleting files.
-- git add -patch
+<section>
+	<h2>Moving and removing</h2>
 
+<pre><code>
+$ git mv &lt;file1&gt; &lt;file2&gt;
+$ git mv &lt;file&gt;... &lt;directory&gt;
+
+$ git rm &lt;file&gt;...
+</code></pre>
+</section>
+
+<section>
+	<h2>Branchs</h2>
+
+	<img height="400" src="http://git-scm.com/figures/18333fig0309-tn.png">
+</section>
+
+<section>
+	<h2>Tags</h2>
+
+	<p>Just like branches but they don't <em>move</em>.</p>
+</section>
+
+<section>
+	<h2>Remotes</h2>
+
+	<p>Remote repositories linked to ours</p>
+
+	<ul>
+		<li>We can fetch changes from them. (<code>git fetch</code>)</li>
+		<li>We can send changes to them. (<code>git push</code>)</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Fork</h2>
+
+	<img height="400" src="http://git-scm.com/figures/18333fig0327-tn.png">
+</section>
+
+<section>
+	<h2>Merge</h2>
+
+	<img height="400" src="http://git-scm.com/figures/18333fig0328-tn.png">
+</section>
+
+<section>
+	<h2>Rebase</h2>
+
+	<img height="400" src="http://git-scm.com/figures/18333fig0329-tn.png">
+</section>
+
+<section>
+	<h2>Good practices with remotes</h2>
+
+	<p>Avoid <em>unwanted</em> merges!</p>
+
+<pre style="font-size: 1em"><code>
+git config --global alias.ff 'pull --ff-only'
+
+git config --global alias.rb 'pull --rebase'
+</code></pre>
+</section>
+
+<section>
+	<h2>Tips</h2>
+
+	<ul>
+		<li>
+			Never <code>git add</code> everything, use <code>git add --patch</code>!
+		</li>
+	</ul>
+</section>
+
+<!-- TODO
 - git log
 - architecture (graphs)
 
-- Branches
-- (Tags)
-- Remotes (ff & rb)
+- Remotes (add)
+
+
+git checkout <branch> - - <file>..
 -->
 
 <section class="chapter">
 	<h1>Resources</h1>
+</section>
+
+<section>
+	<h2>Resources</h2>
+	<ul>
+		<li><a href="http://try.github.io/levels/1/challenges/1">Learn Git in 15 minutes</a></li>
+		<li><a href="http://git-scm.com/book">Pro Git: Entire book on git!</a></li>
+	</ul>
 </section>
 
 <section class="title">
